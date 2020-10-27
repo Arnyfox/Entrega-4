@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Qüestionari</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Arnau Jerez">
+        <meta name="keywords" content="aprender curso HTML5">
+    </head>
+    <body>
+        <header>
+            <h1> Registre d'Alumnes SMX2 </h1>
+        </header>
+        <main>
+            <form method="POST" action="/servidor.php">
+                <table>
+                    <tr>
+                        <td><B>Nom</B></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><B>Cognom</B></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><B>Email</B></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><B>Data de Naixament</B></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><B>Moduls preferits de SMX2</B></td>
+                    <tr>
+                        <td>M4</td>
+                        <td><input type="radio" name="Moduls" value="M4"></td>
+                    </tr>
+                    <tr>
+                        <td>M6</td>
+                        <td><input type="radio" name="Moduls" value="M6"></td>
+                    </tr>
+                    <tr>
+                        <td>M7</td>
+                        <td><input type="radio" name="Moduls" value="M7"></td>
+                    </tr>
+                    <tr>
+                        <td>M8</td>
+                        <td><input type="radio" name="Moduls" value="M8"></td>
+                    </tr>
+                    <tr>
+                        <td>M10</td>
+                        <td><input type="radio" name="Moduls" value="M10"></td>
+                    </tr>
+                    <tr>
+                        <td>M11</td>
+                        <td><input type="radio" name="Moduls" value="M11"></td>
+                    </tr>
+                    <tr>
+                        <td><B>Què voldries fer després d'acabar SMX?</B></td>
+                    </tr>
+                    <tr>
+                        <td>CFGS DAM</td>
+                        <td><input type="radio" name="Futur" value="CFGS DAM"></td>
+                    </tr>
+                    <tr>
+                        <td>CFGS DAW</td>
+                        <td><input type="radio" name="Futur" value="CFGS DAW"></td>
+                    </tr>
+                    <tr>
+                        <td>CFGS ASICS</td>
+                        <td><input type="radio" name="Futur" value="CFGS ASICS"></td>
+                    </tr>
+                    <tr>
+                        <td>Treballar</td>
+                        <td><input type="radio" name="Futur" value="Treballar"></td>
+                    </tr>
+                    <tr>
+                        <td>Res</td>
+                        <td><input type="radio" name="Futur" value="Res"></td>
+                    </tr>
+                    <tr>
+                        <td>Que t'esta semblant el llenguatge Html? </td>
+                        <td>
+                        <select name="ciutat"> <!-- Això es un desplegable -->
+                                <option> M'ha agradat molt </option>
+                                <option> M'ha agradat </option>
+                                <option> Ni fu ni fa </option>
+                                <option> No m'ha agradat </option>
+                                <option> No m'ha agradat gens </option></td>
+                    </tr>
+                    <tr>
+                        <td><B>Nota que esperes d'aquesta assignatura</B></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" max="10" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" required size="8" minlength="8" maxlength="10"></td>
+                    </tr>
+                    <tr>
+                        <input type="submit" value="send">
+                    </tr>              
+                </table>
+            </form>
+        </main>
+    </body>
+</html>
